@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<div id="carriots-graph" style="max-width: 900px;margin:auto;"></div>
+
+<script src="https://www.carriots.com/js/graphs.js"></script>
+<script> 
+		var carriots = {
+			 'apikey' : 'yourApiKey', 
+			 'mime' : 'image/svg+xml', 
+			 'type' : 'line', 
+			 'axis[x]' : 'at',
+			 'axis[y]' : 'Temperature', 
+			  'data[0]' : 'Temperature', 
+			  'data[1]' : 'Humidity', 
+			  'query[device]': 'yourSensorName@yourUserName', 
+			  'query[at_from]': '1388962800', 
+			  'query[at_to]': '1389046000', 
+			  'query[sort]': '_id', 
+			  'query[order]': 'asc', 
+			  'query[max]': '200' 
+			  };
+</script>
+
+</body>
+</html>
