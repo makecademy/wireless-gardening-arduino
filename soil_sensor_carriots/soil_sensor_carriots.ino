@@ -42,7 +42,7 @@ Adafruit_CC3000 cc3000 = Adafruit_CC3000(ADAFRUIT_CC3000_CS, ADAFRUIT_CC3000_IRQ
 // Security can be WLAN_SEC_UNSEC, WLAN_SEC_WEP, WLAN_SEC_WPA or WLAN_SEC_WPA2
 #define WLAN_SECURITY   WLAN_SEC_WPA2
 
-// Xively parameters
+// Carriots parameters
 #define WEBSITE  "api.carriots.com"
 #define API_KEY "yourApiKey"
 #define DEVICE  "yourDeviceName@yourUserName"
@@ -94,7 +94,7 @@ void loop(void)
   String temperature = doubleToString(t,2);
   String humidity = doubleToString(h,2);
  
-  // Prepare JSON for Xively & get length
+  // Prepare JSON for Carriots & get length
   int length = 0;
 
   String data = "{\"protocol\":\"v2\",\"device\":\""+String(DEVICE)+"\",\"at\":\"now\",\"data\":{\"Temperature\":"+String(temperature)+",\"Humidity\":"+String(humidity)+"}}";
