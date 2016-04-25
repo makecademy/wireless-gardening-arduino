@@ -1,4 +1,4 @@
-wireless-gardening-arduino
+Wireless Gardening with Arduino & the CC3000 WiFi chip
 ==========================
 
 This is the code for the "Wireless Gardening with Arduino & the CC3000 WiFi chip" article on the Open Home Automation website. The article is about remotely measuring temperature & humidity with Arduino and the CC3000 WiFi chip and use it for gardening applications.
